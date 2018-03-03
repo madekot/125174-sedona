@@ -30,55 +30,56 @@
         </section>
 
         <section class="found-hotels">
-          <h2>Найдено: 3</h2>
-          <div class="sorting">
-            <h3>Сортировка:</h3>
-            <form action="#" method="get">
-              <fieldset class="sorting-type">
-              <legend class="visually-hidden">Сортировка: по типам</legend>
-              <p>
-                  <label for="sorting-price">
-                    <a>По цене</a>
-                  </label>
-                  <input class="visually-hidden" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
-              </p>
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <p>Найдено: 3</p>
+          <form class="sorting" action="#" method="get">
+            <fieldset>
+                <legend>Сортировка:</legend>
+                <fieldset class="sorting-type">
+                  <legend class="visually-hidden">По типам</legend>
+                  <p>
+                      <label for="sorting-price">
+                        <a>По цене</a>
+                      </label>
+                      <input class="visually-hidden" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
+                  </p>
 
-              <p>
-                  <label for="sorting-type">
-                    <a>По типу</a>
-                  </label>
-                  <input class="visually-hidden" type="radio" name="sorting-type" value="type" id="sorting-type">
-              </p>
+                  <p>
+                      <label for="sorting-type">
+                        <a>По типу</a>
+                      </label>
+                      <input class="visually-hidden" type="radio" name="sorting-type" value="type" id="sorting-type">
+                  </p>
 
-              <p>
-                  <label for="sorting-rating">
-                    <a>По рейтингу</a>
-                  </label>
-                  <input class="visually-hidden" type="radio" name="sorting-type" value="rating" id="sorting-rating">
-              </p>
-              </fieldset>
+                  <p>
+                      <label for="sorting-rating">
+                        <a>По рейтингу</a>
+                      </label>
+                      <input class="visually-hidden" type="radio" name="sorting-type" value="rating" id="sorting-rating">
+                  </p>
+                </fieldset>
 
-              <fieldset class="sorting-descending-increase">
-                <legend class="visually-hidden">
-                  Сортировка: по увеличению, уменьшению
-                </legend>
-                <p>
-                  <label class="visually-hidden" for="sorting-increase">
-                    <a>По увеличению</a>
-                  </label>
-                  <input type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
-                </p>
+                <fieldset class="sorting-descending-increase">
+                  <legend class="visually-hidden">
+                    По увеличению и уменьшению
+                  </legend>
+                  <p>
+                    <label class="visually-hidden" for="sorting-increase">
+                      <a>По увеличению</a>
+                    </label>
+                    <input type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
+                  </p>
 
-                <p>
-                  <label class="visually-hidden" for="sorting-descending">
-                    По уменьшению
-                  </label>
-                  <input type="radio" name="sorting-descending-increase"
-                  value="descending" id="sorting-descending" checked>
-                </p>
-              </fieldset>
-            </form>
-          </div>
+                  <p>
+                    <label class="visually-hidden" for="sorting-descending">
+                      По уменьшению
+                    </label>
+                    <input type="radio" name="sorting-descending-increase"
+                    value="descending" id="sorting-descending" checked>
+                  </p>
+                </fieldset>
+            </fieldset>
+          </form>
 
           <ul class="found-hotels-list">
             <li class="found-hotels-item">
