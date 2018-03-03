@@ -10,7 +10,7 @@
         <a class="main-header-logo">
           <img src="img/138x70.png" width="138" height="70" alt="Логотип турагентства «Седона»">
         </a>
-        <ul class="siti-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -23,38 +23,54 @@
       <h1 class="visually-hidden">Турагентство «Седона»</h1>
       <div class="image-slogan">
         <img src="img/1200x508.png" width="1200" height="508" alt="Фотография гор седоны и слоган">
-        <p class="slogan"><b>Седона — небольшой городок в аризоне, Заслуживающий большего!</b></p>
+        <p class="visually-hidden">Welcome to the gorgeous Sedona</p>
+        <p class="visually-hidden">«Because the grand canyon sucks!»</p>
+        <p class="slogan">Седона — небольшой городок в аризоне, Заслуживающий большего!</p>
       </div>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
         <ul class="features-list">
           <li class="features-item">
-            <span>№1</span>
-            <h3>Настоящий Городок</h3>
-            <img class="city-image" src="img/800x256.png" width="800" height="256" alt="Фотография города Седона">
-            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="column">
+              <span>№1</span>
+              <h3>Настоящий Городок</h3>
+              <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <p class="item-image-1">
+              <img src="img/800x256.png" width="800" height="256" alt="Фотография города Седона">
+            </p>
+          </li>
+
+          <li class="features-item more-list">
             <ul class="features-list-more">
               <li class="features-item">
-                <h4>Жилье</h4>
+                <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
+
               <li class="features-item">
-                <h4>Еда</h4>
+                <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
+
               <li class="features-item">
-                <h4>Сувениры</h4>
+                <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
 
           <li class="features-item">
-            <span>№2</span>
-            <h3>Там есть мост дьявола</h3>
-            <img class="devil's-bridge-image" src="img/800x256.png" width="800" height="256" alt="Фотография моста дьявола">
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="column">
+              <span>№2</span>
+              <h3>Там есть мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <p class="item-image-2">
+              <img src="img/800x256.png" width="800" height="256" alt="Фотография моста дьявола">
+            </p>
           </li>
 
           <li class="features-item">
@@ -79,7 +95,7 @@
 
       <section class="reservation">
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
-        <b>Заинтересовались?</b>
+        <p class="lead">Заинтересовались?</p>
         <p class="excerpt">Укажите предполагаемые даты поездки, И мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button search-button" href="hotels.html">Поиск гостиницы в седоне</a>
       </section>
@@ -89,34 +105,58 @@
       </section>
 
     </main>
-      <footer class="main-footer">
-        <span class="footer-hashtag">#visitsedona</span>
-        <ul class="footer-social">
-          <li>
-            <a class="button social-button social-twitter" href="#">
-              <span class="visually-hidden">Твиттер</span>
+    <footer class="main-footer">
+        <div class="column-left">
+          <p class="footer-hashtag">#visitsedona</p>
+        </div>
+        <div class="column-center">
+          <ul class="footer-social">
+            <li>
+              <a class="button social-button social-twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-youtube" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="column-right">
+          <ul class="footer-social">
+            <li>
+              <a class="button social-button social-twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-youtube" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+          <p class="footer-copyright">
+            <span>Website by</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/115x41.png" width="115" height="41" alt="Логотип HTML Academy">
             </a>
-          </li>
-          <li>
-            <a class="button social-button social-facebook" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="button social-button social-youtube" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-        <p class="footer-copyright">
-          <span>Website by</span>
-          <a href="https://htmlacademy.ru">
-            <img src="img/115x41.png" width="115" height="41" alt="Логотип HTML Academy">
-          </a>
-        </p>
+          </p>
+        </div>
+
       </footer>
 
-      <section class="activ modal modal-form">
+    <section class="active modal modal-form">
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
         <!-- Тут будет форма поиска гостиницы -->
       </section>
