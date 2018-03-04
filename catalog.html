@@ -25,10 +25,54 @@
         <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
 
         <section class="search-hotels">
-          <h2 class="visually-hidden">Форма поиска</h2>
-          <!-- Тут будет форма поиска гостиницы -->
-        </section>
+          <form class="search-hotels-form" action="#" method="get">
+            <fieldset>
+              <legend><h2 class="visually-hidden">Форма поиска</h2></legend>
+              <fieldset>
+                <legend>Инфраструктура:</legend>
+                <p>
+                  <label for="pool">Бассейн</label>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                </p>
 
+                <p>
+                  <label for="parking">Парковка</label>
+                  <input type="checkbox" name="parking" id="parking">
+                </p>
+
+                <p>
+                  <label for="wi-fi">Wi-fi</label>
+                  <input type="checkbox" name="wi-fi" id="wi-fi">
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                <p>
+                  <label for="hotel">Гостиница</label>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                </p>
+
+                <p>
+                  <label for="motel">Мотель</label>
+                  <input type="checkbox" name="motel" id="motel" checked>
+                </p>
+
+                <p>
+                  <label for="apartments">Апартаменты</label>
+                  <input type="checkbox" name="apartments" id="apartments" checked>
+                </p>
+              </fieldset>
+              <div>
+                <p>Стоимость в сутки (р):</p>
+                <div>
+                  <p>От 0</p>
+                  <p>До 3000</p>
+                </div>
+              </div>
+              <button class="button search-hotels-form-button" type="submit">Показать</button>
+            </fieldset>
+          </form>
+        </section>
         <section class="found-hotels">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <p>Найдено: 3</p>

@@ -98,51 +98,98 @@
       <section class="reservation">
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
         <p class="lead">Заинтересовались?</p>
-        <p class="excerpt">Укажите предполагаемые даты поездки, И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="excerpt">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button search-button" href="hotels.html">Поиск гостиницы в седоне</a>
-      </section>
-      <section class="main-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/1200x593.png" width="1200" height="593" alt="Координаты города Седона">
+        <form class="active modal modal-form" action="#" method="post">
+          <fieldset class="visually-hidden">
+            <legend class="visually-hidden">
+              Форма поиска гостиниц
+            </legend>
+
+            <fieldset>
+              <legend class="visually-hidden">Время прибывания</legend>
+              <div>
+                <label for="arrival-data">Дата заезда:</label>
+                <div class="column-input-icon">
+                  <input type="text" name="arrival-data" placeholder="24 Апреля 2017" id="arrival-data">
+                  <img src="img/21x20.png" width="21" height="20" alt="Иконка календаря">
+                </div>
+              </div>
+
+              <div>
+                <label for="departure-date">Дата выезда:</label>
+                <div class="column-input-icon">
+                  <input type="text" name="departure-date" placeholder="4 июля 2017" id="departure-date">
+                  <img src="img/21x20.png" width="21" height="20" alt="Иконка календаря">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+            <legend class="visually-hidden">Колличество гостей</legend>
+              <div>
+                <label for="adult">Взрослые:</label>
+                <div>
+                  <button class="button increase-button" type="button" name="increase-button"></button>
+                  <input type="number" name="adult" placeholder="2" id="adult">
+                  <button class="button reduce-button"  type="button" name="reduce-button"></button>
+                </div>
+              </div>
+
+              <div>
+                <label for="children">Дети:</label>
+                <div>
+                  <button class="button increase-button" type="button" name="increase-button"></button>
+                  <input type="number" name="adult" placeholder="0" id="children">
+                  <button class="button reduce-button" type="button" name="reduce-button"></button>
+                </div>
+              </div>
+            </fieldset>
+            <button class="button form-button" type="submit">Найти</button>
+          </fieldset>
+        </form>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="column">
-        <p class="footer-hashtag">#visitsedona</p>
-      </div>
-      <div class="column">
-        <ul class="footer-social">
-          <li>
-            <a class="button social-button social-twitter" href="#">
-              <span class="visually-hidden">Твиттер</span>
+      <div class="main-footer-conteiner">
+        <div class="column">
+          <p class="footer-hashtag">#visitsedona</p>
+        </div>
+        <div class="column">
+          <ul class="footer-social">
+            <li>
+              <a class="button social-button social-twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a class="button social-button social-youtube" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <p class="footer-copyright">
+            <span>Website by</span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/115x41.png" width="115" height="41" alt="Логотип HTML Academy">
             </a>
-          </li>
-          <li>
-            <a class="button social-button social-facebook" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="button social-button social-youtube" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
+          </p>
+        </div>
       </div>
-      <div class="column">
-        <p class="footer-copyright">
-          <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/115x41.png" width="115" height="41" alt="Логотип HTML Academy">
-          </a>
-        </p>
-      </div>
+      <section class="main-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/1200x593.png" width="1200" height="593" alt="Координаты города Седона">
+      </section>
     </footer>
 
-    <section class="active modal modal-form">
-        <h2 class="visually-hidden">Форма поиска гостиниц</h2>
-        <!-- Тут будет форма поиска гостиницы -->
-      </section>
+
   </body>
 </html>
