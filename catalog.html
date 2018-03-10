@@ -15,7 +15,7 @@
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li>
-            <a class="site-navigation-curent" href="hotels.html">Гостиницы</a>
+            <a class="site-navigation-current" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -62,13 +62,27 @@
                   <input type="checkbox" name="apartments" id="apartments" checked>
                 </p>
               </fieldset>
-              <div>
-                <p>Стоимость в сутки (р):</p>
-                <div>
-                  <p>От 0</p>
-                  <p>До 3000</p>
+              <fieldset>
+                <legend>Стоимость в сутки (р):</legend>
+                <p>
+                  <label for="from">От</label>
+                  <input type="text" value="0" id="from">
+                </p>
+
+                <p>
+                  <label for="prior">До</label>
+                  <input type="text" value="3000" id="prior">
+                </p>
+                <div class="column-controls-button">
+                  <button class="button-control-min-price" type="button" name="button-control-min-price">
+                      <span class="visually-hidden">Переключатель минимальной цены</span>
+                  </button>
+
+                  <button button="button-control-max-price" type="button" name="button-control-max-price">
+                    <span class="visually-hidden">Переключатель максимальной цены</span>
+                  </button>
                 </div>
-              </div>
+              </fieldset>
               <button class="button search-hotels-form-button" type="submit">Показать</button>
             </fieldset>
           </form>
@@ -185,17 +199,17 @@
           <ul class="footer-social">
             <li>
               <a class="button social-button social-twitter" href="#">
-                <span class="visually-hidden">Твиттер</span>
+                <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li>
               <a class="button social-button social-facebook" href="#">
-                <span class="visually-hidden">Фейсбук</span>
+                <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li>
               <a class="button social-button social-youtube" href="#">
-                <span class="visually-hidden">Ютуб</span>
+                <span class="visually-hidden">Youtube</span>
               </a>
             </li>
           </ul>
