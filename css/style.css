@@ -46,12 +46,12 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
   background-color: #ffffff;
 }
 
 .site-navigation {
   list-style: none;
+
 }
 
 .site-navigation__link:link,
@@ -69,7 +69,12 @@ a {
 }
 
 .container__image {
+  min-height: 508px;
+
   background-color: #eeeeee;
+  background-image: url("../img/rock.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .features__slogan {
@@ -138,7 +143,10 @@ a {
 .modal-form__field {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
+  line-height: 26px;
   font-weight: 700;
+  border: none;
+  background-color: #ffffff;
 }
 
 .modal-form__field::-webkit-input-placeholder {
@@ -157,25 +165,36 @@ a {
   background-color: #ffffff;
 }
 
+.modal-form__field::-moz-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  opacity: 1;
+}
 
-.modal-form__field::-moz-placeholder,
-.modal-form__field:-moz-placeholder,
+.modal-form__field:hover::-moz-placeholder {
+  background-color: #ebebeb;
+}
+
+.modal-form__field:focus::-moz-placeholder {
+  background-color: #ffffff;
+}
+
 .modal-form__field:-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
-.modal-form__field:hover::-moz-placeholder,
-.modal-form__field:hover:-moz-placeholder,
 .modal-form__field:hover:-ms-input-placeholder {
   background-color: #ebebeb;
 }
 
-.modal-form__field:focus::-moz-placeholder,
-.modal-form__field:focus:-moz-placeholder,
 .modal-form__field:focus:-ms-input-placeholder {
   background-color: #ffffff;
 }
@@ -205,16 +224,22 @@ a {
 }
 
 
-
 /* catalog.html */
 
 .site-navigation .site-navigation__link_current {
   color: #766357;
 }
 
-.search-hotels__form {
+.container_text_alignment {
+  text-align: left;
+}
+
+.search-hotels {
   color: #ffffff;
   background-color: #81b3d2;
+  background-image: url("../img/rock-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .search-hotels__form-title {
@@ -305,6 +330,7 @@ a {
 }
 
 .found-hotels-list__rating {
+  text-align: center;
   color: #666666;
   background-color: #f2f2f2;
 }
