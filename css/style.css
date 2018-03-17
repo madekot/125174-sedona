@@ -380,11 +380,11 @@ a {
   color: #000000;
 }
 
-
 /* ======================================= */
 
 /* catalog.html */
 
+/* ======================================= */
 .site-navigation .site-navigation__link_current {
   color: #766357;
 }
@@ -394,7 +394,13 @@ a {
   text-align: left;
 }
 
+/* ======================================= */
 .search-hotels {
+  /* Временно для сетки */
+  min-height: 215px;
+  padding: 0 70px;
+  /* Временно для сетки */
+
   color: #ffffff;
   background-color: #4f5962;
   background-image: url("../img/rock-blur.jpg");
@@ -402,6 +408,31 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
+.search-hotels__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.search-hotels__columns {
+  display: flex;
+
+}
+
+.search-hotels__column {
+  width: 255px;
+  outline: 2px solid red;
+}
+
+.search-hotels__column_right {
+  width: 330px;
+  margin-left: auto;
+
+  text-align: right;
+}
+
 
 .search-hotels__form-title {
   font-size: 16px;
