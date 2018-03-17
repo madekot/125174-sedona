@@ -22,13 +22,6 @@ a {
   width: 1200px;
   margin: 0 auto;
 
-    /* Временно для сетки */
-  outline: 2px solid green;
-      /* Временно для сетки */
-}
-
-.visually-hidden {
-  display: none;
 }
 
 .button {
@@ -161,14 +154,7 @@ a {
 
 /* Временно для сетки */
   min-height: 255px;
-  outline: 2px solid yellow;
 /* Временно для сетки */
-}
-
-.features-list__column {
-    /* Временно для сетки */
-  outline: 2px solid yellow;
-    /* Временно для сетки */
 }
 
 .features-list__title {
@@ -182,9 +168,6 @@ a {
   width: 1200px;
 
   background-color: #81b3d2;
-    /* Временно для сетки */
-  outline: 1px solid red;
-    /* Временно для сетки */
 }
 
 .features-list__text_white {
@@ -349,6 +332,7 @@ a {
 }
 
 .main-footer {
+  min-height: 120px;
   display: flex;
 }
 
@@ -423,7 +407,6 @@ a {
 
 .search-hotels__column {
   width: 255px;
-  outline: 2px solid red;
 }
 
 .search-hotels__column_right {
@@ -461,13 +444,13 @@ a {
 
 /* ======================================= */
 
+.found-hotels {
+  padding: 0 70px
+}
 
 
 .found-hotels__column-form {
   display: flex;
-  padding: 0 70px;
-
-  outline: 1px solid black;
 }
 
 .found-hotels__results-text {
@@ -501,7 +484,6 @@ a {
 
 .found-hotels__sorting-column {
   display: flex;
-  outline: 2px solid red;
 }
 
 .found-hotels__sorting-column_right {
@@ -528,8 +510,27 @@ a {
   border-bottom: none;
 }
 
+/* ================================================================= */
+
 .found-hotels-list {
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.found-hotels-list__item {
+
+  display: flex;
+}
+
+.found-hotels-list__image {
+  margin-right: 30px;
+}
+
+.found-hotels-list__column-info {
+  width: 365px;
 }
 
 .found-hotels-list__hotel-link {
@@ -546,6 +547,14 @@ a {
 
 .found-hotels-list__hotel-link:active {
   color: rgba(0, 0, 0, 0.302);
+}
+
+.found-hotels-list__desc {
+  display: flex;
+}
+
+.found-hotels-list__text:first-child {
+  margin-right: 40px;
 }
 
 .found-hotels-list__details-button {
@@ -569,6 +578,9 @@ a {
 }
 
 .found-hotels-list__rating {
+  align-self: flex-end;
+  margin-left: auto;
+
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
