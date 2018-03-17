@@ -344,6 +344,14 @@ a {
 
 /* ======================================= */
 
+.main-footer {
+  display: flex;
+}
+
+.main-footer__column {
+  flex-grow: 1;
+}
+
 .main-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -360,6 +368,8 @@ a {
   color: #000000;
 }
 
+
+/* ======================================= */
 
 /* catalog.html */
 
