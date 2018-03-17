@@ -54,6 +54,8 @@ a {
   color: rgba(255, 255, 255, 0.3)
 }
 
+/* ======================================= */
+
 .main-navigation {
   position: relative;
   display: flex;
@@ -68,7 +70,6 @@ a {
   min-height: 55px;
     /* Временно для сетки */
 }
-
 
 
 .main-header__logo {
@@ -117,6 +118,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* ======================================= */
+
 .container__image {
   min-height: 508px;
 
@@ -155,12 +158,18 @@ a {
 }
 
 .features-list__item {
-  display: flex;
-  outline: 1px solid red;
+  width: 400px;
+
+/* Временно для сетки */
+  min-height: 255px;
+  outline: 2px solid yellow;
+/* Временно для сетки */
 }
 
 .features-list__column {
+    /* Временно для сетки */
   outline: 2px solid yellow;
+    /* Временно для сетки */
 }
 
 .features-list__title {
@@ -170,17 +179,34 @@ a {
 }
 
 .features-list__item_blue {
+  display: flex;
+  width: 1200px;
+
   background-color: #81b3d2;
+    /* Временно для сетки */
+  outline: 1px solid red;
+    /* Временно для сетки */
 }
 
 .features-list__text_white {
   color: #ffffff;
 }
 
+.features-list__column_image {
+  order: -1;
+}
+
+.features-list__item_size_m {
+  /* Временно для сетки */
+  min-height: 330px;
+  /* Временно для сетки */
+}
+
 .features-list__item_gray {
   background-color: #eeeeee;
 }
 /* ======================================= */
+
 .reservation__lead {
   font-size: 30px;
   line-height: 36px;
