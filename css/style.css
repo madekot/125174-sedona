@@ -93,7 +93,6 @@ a {
 
 .site-navigation__item {
   width: 240px;
-  outline: 1px solid red;
 }
 
 .site-navigation__item:nth-child(3) {
@@ -240,6 +239,7 @@ a {
 .modal-form {
   position: absolute;
   left: 50%;
+  z-index: 10;
 
   width: 570px;
   margin-left: -285px;
@@ -344,8 +344,20 @@ a {
 
 /* ======================================= */
 
+.position-footer-column {
+  position: relative;
+}
+
 .main-footer {
   display: flex;
+}
+
+.main-footer_position {
+  position: absolute;
+  bottom: 0;
+
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .main-footer__column {
