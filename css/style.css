@@ -207,6 +207,10 @@ a {
 }
 /* ======================================= */
 
+.reservation__column {
+  width: 575px;
+}
+
 .reservation__lead {
   font-size: 30px;
   line-height: 36px;
@@ -230,6 +234,8 @@ a {
 .reservation__button-search:active {
   background-color: #503e33;
 }
+
+/* ======================================= */
 
 .modal-form__text {
   line-height: 26px;
@@ -310,6 +316,8 @@ a {
 .modal-form__reduce-button {
   background-color: #f2f2f2;
 }
+
+/* ======================================= */
 
 .main-footer__hashtag {
   font-size: 21px;
