@@ -459,7 +459,20 @@ a {
   background-color: #ffffff;
 }
 
+/* ======================================= */
+
+
+
+.found-hotels__column-form {
+  display: flex;
+  padding: 0 70px;
+
+  outline: 1px solid black;
+}
+
 .found-hotels__results-text {
+  margin-right: 50px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -467,11 +480,41 @@ a {
 }
 
 .found-hotels__sorting {
+  flex-grow: 1;
+}
+
+.found-hotels__sorting {
   font-size: 12px;
   line-height: 18px;
 }
 
+.found-hotels__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.found-hotels__sorting-columns {
+  display: flex;
+}
+
+.found-hotels__sorting-column {
+  display: flex;
+  outline: 2px solid red;
+}
+
+.found-hotels__sorting-column_right {
+  margin-left: auto;
+}
+
+.found-hotels__sorting-column_type {
+  min-width: 250px;
+  justify-content: space-between;
+}
+
 .found-hotels__title {
+  margin-right: 40px;
   color: #000000;
 }
 

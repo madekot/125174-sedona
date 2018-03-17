@@ -127,53 +127,65 @@
           </section>
           <section class="found-hotels">
             <h2 class="visually-hidden">Результаты поиска</h2>
-            <p class="found-hotels__results-text">Найдено: 3</p>
-            <form class="found-hotels__sorting" action="#" method="get">
-              <fieldset>
-                  <legend class="found-hotels__title">Сортировка:</legend>
-                  <fieldset class="found-hotels__sorting-type">
-                    <legend class="visually-hidden">По типам</legend>
-                    <p>
-                      <input class="found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
-                      <label class="found-hotels__text" for="sorting-price">
-                        По цене
-                      </label>
-                    </p>
+            <div class="found-hotels__column-form">
+              <p class="found-hotels__results-text">Найдено: 3</p>
+              <form class="found-hotels__sorting" action="#" method="get">
+                <fieldset class="found-hotels__fieldset">
+                  <div class="found-hotels__sorting-columns">
+                    <div class="found-hotels__sorting-column">
+                      <legend class="found-hotels__title">Сортировка:</legend>
+                    </div>
+                    <div class="found-hotels__sorting-column">
+                      <fieldset class="found-hotels__fieldset">
+                      <legend class="visually-hidden">По типам</legend>
+                      <div class="found-hotels__sorting-column found-hotels__sorting-column_type">
+                        <p>
+                          <input class="found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
+                          <label class="found-hotels__text" for="sorting-price">
+                            По цене
+                          </label>
+                        </p>
 
-                    <p>
-                        <input class="found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
-                        <label class="found-hotels__text"  for="sorting-type">
-                          По типу
-                        </label>
-                    </p>
+                        <p>
+                            <input class="found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
+                            <label class="found-hotels__text"  for="sorting-type">
+                              По типу
+                            </label>
+                        </p>
 
-                    <p>
-                        <input class="found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
-                        <label class="found-hotels__text" for="sorting-rating">По рейтингу</label>
-                    </p>
-                  </fieldset>
-
-                  <fieldset class="sorting-descending-increase">
-                    <legend class="visually-hidden">
-                      По увеличению и уменьшению
-                    </legend>
-                    <p>
-                      <input type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
-                      <label class="visually-hidden" for="sorting-increase">
-                        По увеличению
-                      </label>
-                    </p>
-                    <p>
-                      <input type="radio" name="sorting-descending-increase"
-                      value="descending" id="sorting-descending" checked>
-                      <label class="visually-hidden" for="sorting-descending">
-                        По уменьшению
-                      </label>
-                    </p>
-                  </fieldset>
-              </fieldset>
-            </form>
-
+                        <p>
+                            <input class="found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
+                            <label class="found-hotels__text" for="sorting-rating">По рейтингу</label>
+                        </p>
+                      </div>
+                    </fieldset>
+                    </div>
+                    <div class="found-hotels__sorting-column found-hotels__sorting-column_right">
+                      <fieldset class="found-hotels__fieldset sorting-descending-increase">
+                      <legend class="visually-hidden">
+                        По увеличению и уменьшению
+                      </legend>
+                      <div class="found-hotels__sorting-column">
+                        <p>
+                          <input type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
+                          <label class="visually-hidden" for="sorting-increase">
+                            По увеличению
+                          </label>
+                        </p>
+                        <p>
+                          <input type="radio" name="sorting-descending-increase"
+                          value="descending" id="sorting-descending" checked>
+                          <label class="visually-hidden" for="sorting-descending">
+                            По уменьшению
+                          </label>
+                        </p>
+                      </div>
+                    </fieldset>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
             <ul class="found-hotels-list">
               <li class="found-hotels-list__item">
                 <p class="image-hotel">
