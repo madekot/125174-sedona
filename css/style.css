@@ -18,6 +18,19 @@ a {
   text-decoration: none;
 }
 
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+
+    /* Временно для сетки */
+  outline: 2px solid green;
+      /* Временно для сетки */
+}
+
+.visually-hidden {
+  display: none;
+}
+
 .button {
   font-size: 21px;
   line-height: 26px;
@@ -42,16 +55,52 @@ a {
 }
 
 .main-navigation {
+  position: relative;
+  display: flex;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+
+  /* Временно для сетки */
+  min-height: 55px;
+    /* Временно для сетки */
+}
+
+
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .site-navigation {
-  list-style: none;
+  display: flex;
+  flex-grow: 1;
 
+  margin: 0;
+  padding: 0;
+  padding: 0 70px;
+
+  list-style: none;
+  text-align: left;
+}
+
+.site-navigation__item {
+  width: 240px;
+  outline: 1px solid red;
+}
+
+.site-navigation__item:nth-child(3) {
+  margin-left: auto;
+}
+
+.site-navigation__item_align_text {
+  text-align: right;
 }
 
 .site-navigation__link:link,
@@ -78,6 +127,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.features__column {
+  width: 575px;
+}
+
 .features__slogan {
   font-size: 21px;
   line-height: 26px;
@@ -89,8 +142,25 @@ a {
   line-height: 26px;
 }
 
+/* ======================================= */
+
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.features-list__item {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.features-list__column {
+  outline: 2px solid yellow;
 }
 
 .features-list__title {
@@ -110,7 +180,7 @@ a {
 .features-list__item_gray {
   background-color: #eeeeee;
 }
-
+/* ======================================= */
 .reservation__lead {
   font-size: 30px;
   line-height: 36px;
@@ -237,6 +307,7 @@ a {
 .site-navigation .site-navigation__link_current {
   color: #766357;
 }
+
 
 .container_text-alignment {
   text-align: left;

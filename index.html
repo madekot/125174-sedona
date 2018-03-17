@@ -9,35 +9,41 @@
   </head>
   <body>
     <header class="main-header">
-       <nav class="main-navigation">
+       <nav class="main-navigation inner">
          <a class="main-header__logo logo" >
            <img class="logo__img" src="img/logo-sedona.png" width="138" height="70" alt="Логотип турагентства «Седона»">
          </a>
          <ul class="site-navigation">
-           <li><a class="site-navigation__link" href="#">Информация</a></li>
-           <li><a class="site-navigation__link" href="#">Фото и видео</a></li>
-           <li><a class="site-navigation__link" href="#">Карта штата</a></li>
-           <li>
+           <li class="site-navigation__item">
+             <a class="site-navigation__link" href="#">Информация</a>
+           </li>
+           <li  class="site-navigation__item">
+             <a class="site-navigation__link" href="#">Фото и видео</a>
+           </li>
+           <li  class="site-navigation__item site-navigation__item_align_text">
+             <a class="site-navigation__link" href="#">Карта штата</a>
+           </li>
+           <li  class="site-navigation__item site-navigation__item_align_text">
              <a class="site-navigation__link" href="catalog.html">Гостиницы</a>
            </li>
          </ul>
        </nav>
      </header>
 
-    <main class="container">
+    <main class="container inner">
       <h1 class="visually-hidden">Турагентство «Седона»</h1>
       <p class="container__image">
         <img src="img/image-slogan.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Sedona «Because the grand canyon sucks!»">
       </p>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="column">
+        <div class="features__column inner">
           <p class="features__slogan">Седона — небольшой городок в аризоне, Заслуживающий большего!</p>
           <p class="features__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <ul class="features-list">
           <li class="features-list__item features-list__item_blue">
-            <div class="column">
+            <div class="features-list__column">
               <h3 class="features-list__title features-list__text_white">
                 Настоящий Городок
               </h3>
@@ -48,7 +54,7 @@
                 Седона — не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <div class="column">
+            <div class="features-list__column">
               <img src="img/city.jpg" width="800" height="256" alt="Город Седона">
             </div>
           </li>
