@@ -208,7 +208,7 @@ a {
 /* ======================================= */
 
 .reservation__column {
-  width: 575px;
+  width: 570px;
 }
 
 .reservation__lead {
@@ -236,6 +236,31 @@ a {
 }
 
 /* ======================================= */
+
+.modal-form {
+  position: absolute;
+  left: 50%;
+
+  width: 570px;
+  margin-left: -285px;
+  background-color: #ffffff;
+
+  /* Временно для сетки */
+  min-height: 395px;
+  /* Временно для сетки */
+}
+
+.modal-form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.modal-form__column {
+  display: flex;
+  justify-content: center;
+}
 
 .modal-form__text {
   line-height: 26px;
