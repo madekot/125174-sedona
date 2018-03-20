@@ -127,9 +127,7 @@
               <fieldset class="modal-form__fieldset">
                 <legend class="visually-hidden">Время прибывания</legend>
                 <div class="modal-form__column" >
-                  <label class="modal-form__text" for="arrival-data">
-                      Дата заезда:
-                  </label>
+                  <label  class="modal-form__text" for="arrival-data">Дата заезда:</label>
                   <div class="column__input-icon">
                     <input class="modal-form__field" type="text" name="arrival-data" placeholder="24 Апреля 2017" id="arrival-data">
                     <a class="modal-form__calendar-button" href="#" >
@@ -138,8 +136,8 @@
                   </div>
                   </div>
                 <div class="modal-form__column">
-                  <label class="modal-form__text" for="departure-date">Дата выезда:</label>
-                  <div class="column-input-icon">
+                  <label class="modal-form__text modal-form__text_size_m" for="departure-date">Дата выезда:</label>
+                  <div class="column__input-icon">
                     <input class="modal-form__field" type="text" name="departure-date" placeholder="4 июля 2017" id="departure-date">
                     <a href="#" class="modal-form__calendar-button" href="#" >
                       <img src="img/calendar.svg" width="21" height="20" alt="Календарь">
@@ -150,29 +148,29 @@
 
               <fieldset class="modal-form__fieldset">
                 <legend class="visually-hidden">Колличество гостей</legend>
-                <div class="modal-form__column ">
-                  <div class="modal-form__column">
-                    <label class="modal-form__text" for="adult">Взрослые:</label>
-                    <div>
-                      <button class="button modal-form__increase-button" type="button" name="increase-button"></button>
-                      <input class="modal-form__field" type="text" name="adult" placeholder="2" id="adult">
-                      <button class="button modal-form__reduce-button"  type="button" name="reduce-button"></button>
+                <div class="modal-form__column-guests">
+                  <div class="modal-form__column-adult">
+                    <label class="modal-form__text modal-form__text_adult" for="adult">Взрослые:</label>
+                    <div class="modal-form__input">
+                      <button class="modal-form__increase-button" type="button" name="increase-button"></button>
+                      <input class="modal-form__field modal-form__field_size_m" type="text" name="adult" placeholder="2" id="adult">
+                      <button class="modal-form__reduce-button"  type="button" name="reduce-button"></button>
                     </div>
                   </div>
-                  <div class="modal-form__column">
+                  <div class="modal-form__column-children">
                     <label class="modal-form__text" for="children">Дети:</label>
-                    <div>
-                      <button class="button modal-form__increase-button" type="button" name="increase-button"></button>
-                      <input class="modal-form__field" type="text" name="adult" placeholder="0" id="children">
-                      <button class="button modal-form__reduce-button" type="button" name="reduce-button"></button>
+                    <div class="modal-form__input">
+                      <button class="modal-form__increase-button" type="button" name="increase-button"></button>
+                      <input class="modal-form__field modal-form__field_size_m" type="text" name="adult" placeholder="0" id="children">
+                      <button class="modal-form__reduce-button" type="button" name="reduce-button"></button>
                     </div>
                   </div>
                 </div>
               </fieldset>
-              <button class="button modal-form__submit-button" type="submit">
-                Найти
-              </button>
             </fieldset>
+            <button class="button modal-form__submit-button" type="submit">
+              Найти
+            </button>
           </form>
         </section>
       </main>
