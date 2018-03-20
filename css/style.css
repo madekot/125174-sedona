@@ -13,10 +13,11 @@ body {
 
   background-color: #ffffff;
 }
-/*
-* {
-  outline: 1px solid black
-} */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 a {
   text-decoration: none;
@@ -157,6 +158,10 @@ a {
   margin-left: -229px;
 }
 
+.features {
+  margin-bottom: 50px;
+}
+
 
 .features__column {
   margin: 0 auto;
@@ -194,12 +199,17 @@ a {
 }
 
 .features-list__item {
-  width: 33.33%;
+  position: relative;
   box-sizing: border-box;
+  width: 33.33%;
+  padding-top: 45px;
+  padding-right: 5%;
+  padding-bottom: 60px;
+  padding-left: 5%;
+}
 
-/* Временно для сетки */
-  min-height: 255px;
-/* Временно для сетки */
+.features-list__item_text {
+  padding: 0;
 }
 
 .features-list__item_blue {
@@ -214,6 +224,7 @@ a {
 }
 
 .features-list__column_text {
+  box-sizing: border-box;
   padding-top: 45px;
   padding-right: 5%;
   padding-bottom: 60px;
@@ -227,6 +238,8 @@ a {
 
 .features-list__title {
   margin: 0;
+  padding-left: 22%;
+  padding-right: 22%;
   margin-bottom: 25px;
 
   color: #000000;
@@ -262,6 +275,11 @@ a {
   background-color: #ffffff;
 }
 
+.features-list__number_gray::after,
+.features-list__number_gray:before {
+  background-color: #333333;
+}
+
 .features-list__text {
   margin: 0;
 }
@@ -275,9 +293,48 @@ a {
 }
 
 .features-list__item_size_m {
-  /* Временно для сетки */
-  min-height: 330px;
-  /* Временно для сетки */
+  padding-top: 160px;
+  padding-bottom: 85px;
+}
+
+.features-list__icon_home::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -36px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.features-list__icon_food::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -37px;
+  width: 74px;
+  height: 70px;
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-list__icon_souvenir::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -32px;
+  width: 64px;
+  height: 76px;
+  background-image: url("../img/icon-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features-list__item_gray {
@@ -290,6 +347,9 @@ a {
 }
 
 .reservation__lead {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -297,6 +357,9 @@ a {
 }
 
 .reservation__excerpt {
+  margin: 0;
+  margin-bottom: 45px;
+
   line-height: 24px;
 }
 
