@@ -38,6 +38,8 @@ a {
 }
 
 .button {
+  display: inline-block;
+
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -226,9 +228,9 @@ a {
 .features-list__column_text {
   box-sizing: border-box;
   padding-top: 45px;
-  padding-right: 5%;
+  padding-right: 4%;
   padding-bottom: 60px;
-  padding-left: 5%;
+  padding-left: 4%;
 }
 
 .features-list__column_size_m {
@@ -238,8 +240,8 @@ a {
 
 .features-list__title {
   margin: 0;
-  padding-left: 22%;
-  padding-right: 22%;
+  padding-left: 25%;
+  padding-right: 25%;
   margin-bottom: 25px;
 
   color: #000000;
@@ -343,7 +345,8 @@ a {
 /* ======================================= */
 
 .reservation__column {
-  width: 570px;
+  padding-left: 26%;
+  padding-right: 26%;
 }
 
 .reservation__lead {
@@ -364,6 +367,11 @@ a {
 }
 
 .reservation__button-search {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 24.3%;
+  padding-right: 24.3%;
+
   background-color: #766357;
 }
 
@@ -383,7 +391,9 @@ a {
   left: 50%;
   z-index: 10;
 
+  box-sizing: border-box;
   width: 570px;
+  padding: 55px;
   margin-left: -285px;
   background-color: #ffffff;
 
@@ -409,10 +419,19 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
 
+.column__input-icon {
+  /* flex-grow: 1; */
 }
 
 .modal-form__field {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -428,6 +447,10 @@ a {
 }
 
 .modal-form__field::-webkit-input-placeholder {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -436,6 +459,7 @@ a {
 }
 
 .modal-form__field:hover::-webkit-input-placeholder {
+
   background-color: #ebebeb;
 }
 
