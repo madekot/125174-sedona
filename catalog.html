@@ -144,21 +144,21 @@
                         <legend class="visually-hidden">По типам</legend>
                         <div class="found-hotels__sorting-column found-hotels__sorting-column_type">
                           <p>
-                            <input class="found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
+                            <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
                             <label class="found-hotels__text" for="sorting-price">
                               По цене
                             </label>
                           </p>
 
                           <p>
-                              <input class="found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
+                              <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
                               <label class="found-hotels__text"  for="sorting-type">
                                 По типу
                               </label>
                           </p>
 
                           <p>
-                              <input class="found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
+                              <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
                               <label class="found-hotels__text" for="sorting-rating">По рейтингу</label>
                           </p>
                         </div>
@@ -169,18 +169,24 @@
                         <legend class="visually-hidden">
                           По увеличению и уменьшению
                         </legend>
-                        <div class="found-hotels__sorting-column">
-                          <p>
-                            <input type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
-                            <label class="visually-hidden" for="sorting-increase">
-                              По увеличению
+                        <div class="found-hotels__sorting-column found-hotels__sorting-column_icon">
+                          <p class="found-hotels__column-descending-increase">
+                            <input class="visually-hidden" type="radio" name="sorting-descending-increase" value="increase" id="sorting-increase">
+                            <label class="found-hotels__icon" for="sorting-increase">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path class="found-hotel__icon-color" fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                              </svg>
+                              <span class="visually-hidden">По увеличению</span>
                             </label>
                           </p>
-                          <p>
-                            <input type="radio" name="sorting-descending-increase"
+                          <p class="found-hotels__column-descending-increase">
+                            <input class="visually-hidden" type="radio" name="sorting-descending-increase"
                             value="descending" id="sorting-descending" checked>
-                            <label class="visually-hidden" for="sorting-descending">
-                              По уменьшению
+                            <label class="found-hotels__icon" for="sorting-descending">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path class="found-hotel__icon-color" fill="#cacaca" d="M5.5 10L0 0h11"/>
+                              </svg>
+                              <span class="visually-hidden">По уменьшению</span>
                             </label>
                           </p>
                         </div>

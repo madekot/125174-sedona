@@ -999,17 +999,22 @@ input:focus + .search-hotels__form-text {
 /* ======================================= */
 
 .found-hotels {
-  padding: 0 70px
+  padding: 30px 70px;
+  padding-top: 25px;
 }
 
 
 .found-hotels__column-form {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .found-hotels__results-text {
+  margin: 0;
   margin-right: 50px;
+
 
   font-size: 21px;
   line-height: 26px;
@@ -1017,11 +1022,9 @@ input:focus + .search-hotels__form-text {
   color: #000000;
 }
 
-.found-hotels__sorting {
-  flex-grow: 1;
-}
 
 .found-hotels__sorting {
+  flex-grow: 1;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1043,12 +1046,54 @@ input:focus + .search-hotels__form-text {
   flex-wrap: wrap;
 }
 
+.found-hotels__sorting-column_icon {
+  margin-top: 10px;
+}
+
+
 .found-hotels__sorting-column_right {
   margin-left: auto;
 }
 
+.found-hotels__column-descending-increase {
+  margin: 0;
+}
+
+.found-hotels__icon {
+  margin-left: 12px;
+}
+
+.found-hotels__icon:hover .found-hotel__icon-color,
+.found-hotels__icon:focus .found-hotel__icon-color {
+  fill: #231f20;
+}
+
+.found-hotels__icon:active .found-hotel__icon-color {
+  fill: #81b3d2;
+}
+
+input:checked + .found-hotels__icon path {
+  fill: #81b3d2;
+}
+
+input:focus + .found-hotels__icon {
+  border-bottom: 1px dotted #81b3d2;
+}
+
+
+
+/* .found-hotels__descending-increase-text {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  #81b3d2
+  background-image: url("..img/")
+} */
+
+
 .found-hotels__sorting-column_type {
-  min-width: 250px;
+  width: 240px;
   justify-content: space-between;
 }
 
@@ -1066,6 +1111,8 @@ input:focus + .search-hotels__form-text {
   color: #81b3d2;
   border-bottom: none;
 }
+
+
 
 /* ================================================================= */
 
