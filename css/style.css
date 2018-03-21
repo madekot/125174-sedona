@@ -779,10 +779,14 @@ a {
 
 /* ======================================= */
 .search-hotels {
-  /* Временно для сетки */
-  min-height: 215px;
-  padding-left: 6%;
+  padding-top: 25px;
   padding-right: 6%;
+  padding-bottom: 30px;
+  padding-left: 6%;
+
+  /* Временно для сетки */
+  /* min-height: 215px; */
+
   /* Временно для сетки */
 
   color: #ffffff;
@@ -806,6 +810,7 @@ a {
 }
 
 .search-hotels__column {
+  /* margin-bottom: 25px; */
   width: 24%;
 }
 
@@ -818,8 +823,54 @@ a {
 
 
 .search-hotels__form-title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 16px;
   font-weight: 700;
+}
+
+.search-hotels__column-text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+}
+
+.search-hotels__form-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input:checked + .search-hotels__form-text:before {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input:disabled:checked + .search-hotels__form-text:before {
+  background-image: url(../img/checkbox-disabled-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input:disabled + .search-hotels__form-text:before {
+  background-image: url(../img/checkbox-disabled-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input:focus + .search-hotels__form-text {
+  border-bottom: 1px dotted #ffffff;
 }
 
 .search-hotels__form-field {
