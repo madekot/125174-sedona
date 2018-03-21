@@ -999,16 +999,21 @@ input:focus + .search-hotels__form-text {
 /* ======================================= */
 
 .found-hotels {
-  padding: 30px 70px;
-  padding-top: 25px;
+  /* padding: 30px 70px; */
+
 }
 
 
 .found-hotels__column-form {
+  padding-top: 25px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 30px;
+
 }
 
 .found-hotels__results-text {
@@ -1117,20 +1122,32 @@ input:focus + .found-hotels__icon {
 /* ================================================================= */
 
 .found-hotels-list {
-
   margin: 0;
   padding: 0;
 
   list-style: none;
+  border-top: 1px solid #e5e5e5;
 }
 
 .found-hotels-list__item {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 150px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  padding-top: 25px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .found-hotels-list__image {
+  margin: 0;
+  margin-top: 5px;
   margin-right: 30px;
+  line-height: 0;
 }
 
 .found-hotels-list__column-info {
@@ -1138,6 +1155,9 @@ input:focus + .found-hotels__icon {
 }
 
 .found-hotels-list__hotel-link {
+  display: block;
+  margin-bottom: 8px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1157,16 +1177,29 @@ input:focus + .found-hotels__icon {
   display: flex;
 }
 
-.found-hotels-list__text:first-child {
-  margin-right: 40px;
+.found-hotels-list__text {
+  width: 115px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
+.found-hotels-list__column-reserve {
+  font-size: 0;
+  margin: 0;
 }
 
 .found-hotels-list__details-button {
+  padding: 3px 17px;
+  margin-right: 6px;
+
   font-size: 14px;
   line-height: 21px;
 }
 
 .found-hotels-list__reserve-button {
+  padding: 3px 17px;
+
   font-size: 14px;
   line-height: 21px;
   background-color: #766357;
@@ -1182,10 +1215,36 @@ input:focus + .found-hotels__icon {
 }
 
 .found-hotels-list__rating {
+  margin: 0;
+  padding: 6px 16px;
   align-self: flex-end;
   margin-left: auto;
 
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.found-hotels-list__rating::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 75px;
+
+  height: 17px;
+  background-image: url("../img/star.svg");
+  background-position: 0 0;
+  background-repeat: space;
+}
+
+.found-hotels-list__rating_four-star:before {
+  width: 85px;
+}
+
+.found-hotels-list__rating_three-star::before {
+  width: 60px;
+}
+
+.found-hotels-list__rating_three-two::before {
+  width: 40px;
 }
