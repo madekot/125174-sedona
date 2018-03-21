@@ -96,30 +96,33 @@
 
                     <div class="search-hotels__column search-hotels__column_right">
                       <fieldset class="search-hotels__fieldset">
-                        <legend class="search-hotels__form-title">
-                          Стоимость в сутки (р):
-                        </legend>
-                        <p>
-                          <label class="search-hotels__form-text" for="from">От</label>
-                          <input class="search-hotels__form-field" type="text" value="0" id="from">
-                        </p>
+                        <div class="search-hotels__column-filter-range">
+                          <legend class="search-hotels__form-title search-hotels__form-title_m">
+                            Стоимость в сутки (р):
+                          </legend>
+                          <div class="search-hotels__column-controls">
+                            <p class="search-hotels__control-left">
+                              <label class="search-hotels__control-text-left">От
+                                <input class="search-hotels__form-field" type="text" value="0">
+                              </label>
+                            </p>
 
-                        <p>
-                          <label class="search-hotels__form-text" for="prior">
-                            До
-                          </label>
-                          <input class="search-hotels__form-field" type="text" value="3000" id="prior">
-                        </p>
-                        <div class="column-controls-button">
-                          <button class="button-control-min-price" type="button" name="button-control-min-price">
+                            <p class="search-hotels__control-right">
+                              <label class="search-hotels__form-text" for="prior">До
+                                <input class="search-hotels__form-field" type="text" value="3000" id="prior">
+                              </label>
+                            </p>
+                          </div>
+                          <div class="column-controls-button">
+                            <div class="search-hotels__scale"></div>
+                            <div class="search-hotels__button-control search-hotels__control_min-price">
                               <span class="visually-hidden">Переключатель минимальной цены</span>
-                          </button>
-
-                          <button class="button-control-max-price" type="button" name="button-control-max-price">
-                            <span class="visually-hidden">Переключатель максимальной цены</span>
-                          </button>
-                        </div>
-                        <button class="search-hotels-form-button button" type="submit">Показать</button>
+                            </div>
+                            <div class="search-hotels__button-control search-hotels__control_max-price">
+                              <span class="visually-hidden">Переключатель минимальной цены</span>
+                            </div>
+                          </div>
+                          <button class="search-hotels-form-button button" type="submit">Показать</button>
                       </fieldset>
                     </div>
                   </div>
