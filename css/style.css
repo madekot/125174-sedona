@@ -303,7 +303,7 @@ a {
 
 .features-list__item_size_m {
   padding-top: 160px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
 
   background-color: #ffffff;
 }
@@ -354,7 +354,7 @@ a {
 }
 
 .features-list__item_gray {
-  padding-top: 50px;
+  padding-top: 45px;
   background-color: #eeeeee;
 }
 /* ======================================= */
@@ -380,7 +380,7 @@ a {
 
 .reservation__excerpt {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   line-height: 24px;
 }
@@ -763,17 +763,21 @@ a {
 
 .main-footer__copyright {
   display: flex;
-  width: 195px;
+  width: 197px;
   justify-content: space-between;
   align-items: center;
   margin: 0;
 }
 
 .main-footer__copyright-text {
-
   line-height: 26px;
   color: #000000;
 }
+
+.main-footer__copyright-link  {
+  line-height: 0;
+}
+
 
 /* ======================================= */
 
