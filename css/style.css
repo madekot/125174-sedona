@@ -1155,7 +1155,7 @@ input:focus + .found-hotels__icon {
 }
 
 .found-hotels-list__hotel-link {
-  display: block;
+  display: inline-block;
   margin-bottom: 8px;
 
   font-size: 21px;
