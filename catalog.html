@@ -97,9 +97,9 @@
                     <div class="search-hotels__column search-hotels__column_right">
                       <fieldset class="search-hotels__fieldset">
                         <div class="search-hotels__column-filter-range">
-                          <legend class="search-hotels__form-title search-hotels__form-title_m">
+                          <p class="search-hotels__form-title search-hotels__form-title_m">
                             Стоимость в сутки (р):
-                          </legend>
+                          </p>
                           <div class="search-hotels__column-controls">
                             <p class="search-hotels__control-left">
                               <label class="search-hotels__control-text-left">От
@@ -123,6 +123,7 @@
                             </button>
                           </div>
                           <button class="search-hotels-form-button button" type="submit">Показать</button>
+                        </div>
                       </fieldset>
                     </div>
                   </div>
@@ -141,28 +142,28 @@
                       </div>
                       <div class="found-hotels__sorting-column">
                         <fieldset class="found-hotels__fieldset">
-                        <legend class="visually-hidden">По типам</legend>
-                        <div class="found-hotels__sorting-column found-hotels__sorting-column_type">
-                          <p>
-                            <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
-                            <label class="found-hotels__text" for="sorting-price">
-                              По цене
-                            </label>
-                          </p>
-
-                          <p>
-                              <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
-                              <label class="found-hotels__text"  for="sorting-type">
-                                По типу
+                          <legend class="visually-hidden">По типам</legend>
+                          <div class="found-hotels__sorting-column found-hotels__sorting-column_type">
+                            <p>
+                              <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="price" id="sorting-price" checked>
+                              <label class="found-hotels__text" for="sorting-price">
+                                По цене
                               </label>
-                          </p>
+                            </p>
 
-                          <p>
-                              <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
-                              <label class="found-hotels__text" for="sorting-rating">По рейтингу</label>
-                          </p>
-                        </div>
-                      </fieldset>
+                            <p>
+                                <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="type" id="sorting-type">
+                                <label class="found-hotels__text"  for="sorting-type">
+                                  По типу
+                                </label>
+                            </p>
+
+                            <p>
+                                <input class="visually-hidden found-hotels__field" type="radio" name="sorting-type" value="rating" id="sorting-rating">
+                                <label class="found-hotels__text" for="sorting-rating">По рейтингу</label>
+                            </p>
+                          </div>
+                        </fieldset>
                       </div>
                       <div class="found-hotels__sorting-column found-hotels__sorting-column_right">
                         <fieldset class="found-hotels__fieldset sorting-descending-increase">
@@ -319,7 +320,6 @@
             </p>
           </div>
         </footer>
-      </div>
       </div>
     </body>
 </html>
