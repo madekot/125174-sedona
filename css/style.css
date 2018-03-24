@@ -1286,18 +1286,13 @@ input:focus + .found-hotels__icon {
   line-height: 0;
 }
 
-.found-hotels-list__image {
-  width: 135px;
-  height: 90px;
-}
-
 .found-hotels-list__column-info {
   width: 365px;
 }
 
 .found-hotels-list__hotel-link {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 21px;
@@ -1322,9 +1317,10 @@ input:focus + .found-hotels__icon {
 }
 
 .found-hotels-list__text {
-  width: 115px;
+  width: 110px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-right: 6px;
+  margin-bottom: 13px;
 }
 
 .found-hotels-list__column-reserve {
