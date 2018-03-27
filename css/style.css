@@ -444,10 +444,51 @@ a {
   background-color: #503e33;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-form {
+  visibility: visible;
   position: absolute;
   left: 50%;
-  z-index: 10;
+  z-index: 25;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -458,6 +499,19 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.modal-form__hidden {
+  visibility: hidden;
+}
+
+.modal-form__show {
+  visibility: visible;
+  animation: bounce 0.6s;
+}
+
+.modal-form__error {
+  animation: shake 0.6s;
 }
 
 .modal-form__fieldset {
@@ -733,6 +787,7 @@ a {
 }
 
 .main-map {
+  position: relative;
   min-height: 593px;
 
   line-height: 0;
@@ -751,7 +806,19 @@ a {
 }
 
 .main-map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   min-height: 593px;
+  z-index: 10;
+}
+
+.main-map__google-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  border: none;
 }
 
 .main-footer_position {
@@ -761,6 +828,7 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: none;
           box-shadow: none;
+  z-index: 20;
 }
 
 .main-footer__column {

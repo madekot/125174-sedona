@@ -123,7 +123,7 @@
           <a class="button reservation__button-search" href="catalog.html">Поиск гостиницы в седоне</a>
         </div>
 
-        <form class="active modal modal-form" action="#" method="post">
+        <form class="modal modal-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal-form__fieldset">
             <legend class="visually-hidden">Форма поиска гостиниц</legend>
             <fieldset class="modal-form__fieldset">
@@ -171,7 +171,7 @@
                   <label class="modal-form__text" for="children">Дети:</label>
                   <div class="modal-form__input">
                     <button class="modal-form__increase-button" type="button" name="increase-button"></button>
-                    <input class="modal-form__field modal-form__field_size_m" type="text" name="adult" value="0" id="children">
+                    <input class="modal-form__field modal-form__field_size_m" type="text" name="children" value="0" id="children">
                     <button class="modal-form__reduce-button" type="button" name="reduce-button"></button>
                   </div>
                 </div>
@@ -187,6 +187,8 @@
     <div class="position-footer-column">
       <section class="main-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe class="main-map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457314.2275816832!2d-111.96913910660484!3d34.79984913560092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522148281101" width="1200" height="593" allowfullscreen>
+        </iframe>
         <img class="main-map__image" src="img/map.png" width="1200" height="593" alt="Координаты города Седона">
       </section>
       <footer class="main-footer main-footer_position inner">
@@ -236,6 +238,7 @@
       </footer>
     </div>
   </div>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
