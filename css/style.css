@@ -1084,7 +1084,9 @@ a {
 
 .search-hotels__button-control:hover,
 .search-hotels__button-control:focus {
-  border: 9px solid #ffffff;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .search-hotels__control_min-price {
