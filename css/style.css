@@ -485,7 +485,6 @@ a {
 }
 
 .modal-form {
-  visibility: visible;
   position: absolute;
   left: 50%;
   z-index: 25;
@@ -499,6 +498,7 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  visibility: visible;
 }
 
 .modal-form__hidden {
@@ -507,6 +507,7 @@ a {
 
 .modal-form__show {
   visibility: visible;
+
   animation: bounce 0.6s;
 }
 
@@ -788,6 +789,7 @@ a {
 
 .main-map {
   position: relative;
+
   min-height: 593px;
 
   line-height: 0;
@@ -809,8 +811,9 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 593px;
   z-index: 10;
+
+  min-height: 593px;
 }
 
 .main-map__google-map {
@@ -818,17 +821,18 @@ a {
   top: 0;
   left: 0;
   z-index: 15;
+
   border: none;
 }
 
 .main-footer_position {
   position: absolute;
   bottom: 0;
+  z-index: 20;
 
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: none;
           box-shadow: none;
-  z-index: 20;
 }
 
 .main-footer__column {

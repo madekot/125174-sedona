@@ -8,6 +8,9 @@ var epartureDate = document.querySelector("[name=departure-date]");
 var adult = document.querySelector("[id=adult]");
 var children = document.querySelector("[id=children]");
 
+var storageAdult
+var storageChildren
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -20,7 +23,6 @@ try {
 
 document.addEventListener("DOMContentLoaded", function(evt) {
   formPopup.classList.add("modal-form__hidden");
-
 });
 
 link.addEventListener("click", function(evt) {
@@ -36,8 +38,8 @@ link.addEventListener("click", function(evt) {
   }
 });
 
-var storageAdult = localStorage.getItem("adult");
-var storageChildren = localStorage.getItem("children");
+storageAdult = localStorage.getItem("adult");
+storageChildren = localStorage.getItem("children");
 
 formPopup.addEventListener("submit", function(evt) {
   if (!arrivalData.value || !epartureDate.value || !adult.value || !children.value) {
