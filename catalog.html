@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона (поиск жилья)</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
     <body class="main-body">
       <div class="inner">
@@ -68,7 +68,7 @@
                       </fieldset>
                     </div>
 
-                    <div class="search-hotels__column">
+                    <div class="search-hotels__column search-hotels__column-type-digs">
                       <fieldset class="search-hotels__fieldset">
                         <legend class="search-hotels__form-title">Тип жилья:</legend>
                         <p class="search-hotels__column-text">
@@ -102,13 +102,15 @@
                           </p>
                           <div class="search-hotels__column-controls">
                             <p class="search-hotels__control-left">
-                              <label class="search-hotels__control-text-left">От
+                              <label class="search-hotels__control-text-left">
+                                <span>От</span>
                                 <input class="search-hotels__form-field" type="text" value="0">
                               </label>
                             </p>
 
                             <p class="search-hotels__control-right">
-                              <label for="prior">До
+                              <label class="search-hotels__control-text-right" for="prior">
+                                <span>До</span>
                                 <input class="search-hotels__form-field" type="text" value="3000" id="prior">
                               </label>
                             </p>
